@@ -1,0 +1,9 @@
+faiss-cpu
+httpx
+langchain-community
+langchain-core
+langchain-text-splitters
+langgraph
+pypdf
+python-dotenv
+sentence-transformers
