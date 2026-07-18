@@ -82,7 +82,7 @@ docker run --gpus all -p 8000:8000 qwen-service
 
 ## Hardware Used
 - **GPU**: NVIDIA GeForce RTX 3060 Laptop (6GB VRAM)
-- **OS**: Windows 11
+- **OS**: Windows 10
 - **Python**: 3.11
 
 ## Limitations & Trade-offs
