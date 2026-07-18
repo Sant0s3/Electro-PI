@@ -86,7 +86,7 @@ docker run --gpus all -p 8000:8000 qwen-service
 - **Python**: 3.11
 
 ## Limitations & Trade-offs
-- **Section 1**: Used Deepgram + Groq cloud APIs (requires API keys). The bonus section swaps Deepgram STT with a local FasterWhisper model running on CPU.
+- **Section 1**: Used Deepgram + Groq cloud APIs (requires API keys). The bonus section swaps Deepgram STT with a local FasterWhisper model running on CPU accuracy wasn't that good.
 - **Section 2**: The RAG pipeline retrieves relevant chunks from the PDF and generates answers using Groq's Llama 3.3 70B model. Requires a `GROQ_API_KEY` in `.env`.
 - **Section 3**: BitsAndBytes NF4 quantization crashes silently on native Windows during weight loading. We documented this and measured both modes successfully by running them in separate processes.
 - **Section 4**: Used FastAPI instead of vLLM/TGI because vLLM doesn't support native Windows and pre-allocates too much VRAM for a small model on a consumer GPU. Justification is in `Section 4 - Model Service/NOTES.md`.
